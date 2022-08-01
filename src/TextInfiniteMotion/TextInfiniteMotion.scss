@@ -1,0 +1,54 @@
+.marquee {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		font-size: 4rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: rgb(35, 124, 0);
+		color: #fff;
+	}
+
+	&__line {
+		p {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 1rem;
+			gap: 1rem;
+		}
+	}
+
+	.circle {
+		height: 3rem;
+		width: 3rem;
+		border-radius: 50%;
+
+		&__background--red {
+			background: linear-gradient(to top right, rgb(255, 51, 129), red);
+		}
+
+		&__background--orange {
+			background: linear-gradient(to top right, #FF5A00, orange);
+		}
+
+		&__background--purple {
+			background: linear-gradient(to top right, rgb(99, 0, 99), rgb(255, 0, 255));
+		}
+
+		&__background--blue {
+			background: linear-gradient(to top right, blue, rgb(40, 198, 251));
+		}
+
+		&__border--red {
+			outline: 1px solid red;
+		}
+
+		&__border--black {
+			outline: 1px solid black;
+		}
+	}
+}
